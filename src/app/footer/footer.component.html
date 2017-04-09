@@ -1,0 +1,13 @@
+<div class="footer-wrapper">
+  <h2>CONTACT US</h2>
+  <div class="info">
+    <i class="material-icons">email</i>
+    <a href="mailto:{{footerConfig.email}}">{{footerConfig.email}}</a>
+  </div>
+  <ul class="info">
+    <li *ngFor="let telephone of footerConfig.telephones">
+      <i class="material-icons">call</i>
+      <a href="tell:{{telephone}}">{{telephone}}</a>
+    </li>
+  </ul>
+</div>
