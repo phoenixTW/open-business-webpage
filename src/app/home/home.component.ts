@@ -7,7 +7,7 @@ import {AppDescriptorService} from '../_services/app-descriptor.service';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  public componentName = 'Home';
+  public componentName = 'home';
   homeConfig: any;
   constructor(private appDescriptor: AppDescriptorService) { }
 

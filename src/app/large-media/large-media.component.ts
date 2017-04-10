@@ -15,7 +15,6 @@ export class LargeMediaComponent implements OnInit {
   ngOnInit() {
     this.config = this.appDescriptor.load(this.component).subscribe(componentConfig => {
       this.config = this.getLargeMediaConfig(componentConfig.templates);
-      console.log(this.config);
     });
   }
 
