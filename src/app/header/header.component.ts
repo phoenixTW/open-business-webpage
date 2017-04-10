@@ -7,7 +7,7 @@ import { HeaderService } from './header.service';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  headerConfig: Object;
+  headerConfig: any;
   constructor(private headerService: HeaderService) {}
 
   ngOnInit() {

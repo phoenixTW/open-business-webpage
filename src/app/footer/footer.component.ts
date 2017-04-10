@@ -7,7 +7,7 @@ import {FooterService} from './footer.service';
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent implements OnInit {
-  footerConfig: Object;
+  footerConfig: any;
 
   constructor(private footerService: FooterService) { }
 
