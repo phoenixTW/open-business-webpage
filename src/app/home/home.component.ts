@@ -8,7 +8,7 @@ import {AppDescriptorService} from '../_services/app-descriptor.service';
 })
 export class HomeComponent implements OnInit {
   public componentName = 'Home';
-  private homeConfig: any;
+  homeConfig: any;
   constructor(private appDescriptor: AppDescriptorService) { }
 
   ngOnInit() {

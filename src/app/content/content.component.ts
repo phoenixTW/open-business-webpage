@@ -10,7 +10,7 @@ export class ContentComponent implements OnInit {
 
   @Input()
   component: string;
-  private config: any;
+  config: any;
   constructor(private appDescriptor: AppDescriptorService) { }
 
   ngOnInit() {

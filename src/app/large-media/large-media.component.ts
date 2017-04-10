@@ -9,7 +9,7 @@ import {AppDescriptorService} from '../_services/app-descriptor.service';
 export class LargeMediaComponent implements OnInit {
   @Input()
   component: string;
-  private config: any;
+  config: any;
   constructor(private appDescriptor: AppDescriptorService) { }
 
   ngOnInit() {
