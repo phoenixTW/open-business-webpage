@@ -1,5 +1,11 @@
-<md-toolbar color="primary" class="header-wrapper">
-  <img src="{{headerConfig.companyLogo}}" alt="{{headerConfig.companyName}}" class="logo" *ngIf="headerConfig.companyLogo">
-  <span class="company-name">{{headerConfig.companyName}}</span>
-  <span class="spacer"></span>
+<md-toolbar class="header-wrapper theme">
+  <div class="page">
+    <img src="{{headerConfig.companyLogo}}" alt="{{headerConfig.companyName}}" class="logo" *ngIf="headerConfig.companyLogo">
+    <div class="company-name">
+      <span>{{headerConfig.companyName}}</span>
+      <span class="subtitle" *ngIf="headerConfig.subtitle">{{headerConfig.subtitle}}</span>
+    </div>
+
+    <span class="spacer"></span>
+  </div>
 </md-toolbar>

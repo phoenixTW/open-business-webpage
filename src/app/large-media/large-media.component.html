@@ -1,0 +1,8 @@
+<section class="no-margin">
+  <img src="{{config.source}}" alt="{{config.alt}}" class="large-image">
+  <div class="row page" *ngIf="config.content">
+    <h1 *ngIf="config.content.heading">{{config.content.heading}}</h1>
+    <p class="content" *ngIf="config.content.paragraph">{{config.content.paragraph}}</p>
+    <button md-raised-button *ngIf="config.content.button">{{config.content.button}}</button>
+  </div>
+</section>

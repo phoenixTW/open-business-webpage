@@ -1,0 +1,23 @@
+{
+  "templates": [
+    {
+      "name": "large.media",
+      "config": {
+        "source": "https://6sigma.com/wp-content/uploads/2013/08/6Sigma_slideroption2.jpg",
+        "alt": "Large Image",
+        "content": {
+          "heading": "Your Story Starts With Us.",
+          "paragraph": "Every landing page needs a small description after the big bold title, that's why we added this text here. Add here all the information that can make you or your product create the first impression.",
+          "button": "Read More"
+        }
+      }
+    },
+    {
+      "name": "content",
+      "config": {
+        "heading": "ABOUT US",
+        "paragraph": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+      }
+    }
+  ]
+}

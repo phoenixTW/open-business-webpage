@@ -1,4 +1,5 @@
-<div class="notification">
-  <h4>This site is</h4>
-  <h2>Under Development</h2>
-</div>
+<section *ngFor="let template of homeConfig.templates">
+  <app-large-media *ngIf="isTemplate(template, 'large.media')" [component]="componentName"></app-large-media>
+  <app-content *ngIf="isTemplate(template, 'content')" [component]="componentName"></app-content>
+</section>
+

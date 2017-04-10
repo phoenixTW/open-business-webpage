@@ -12,13 +12,18 @@ import { HomeComponent } from './home/home.component';
 import {HeaderService} from './header/header.service';
 import { FooterComponent } from './footer/footer.component';
 import {FooterService} from './footer/footer.service';
+import { ContentComponent } from './content/content.component';
+import {AppDescriptorService} from './_services/app-descriptor.service';
+import { LargeMediaComponent } from './large-media/large-media.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     HomeComponent,
-    FooterComponent
+    FooterComponent,
+    ContentComponent,
+    LargeMediaComponent
   ],
   imports: [
     BrowserModule,
@@ -30,6 +35,7 @@ import {FooterService} from './footer/footer.service';
   providers: [
     HeaderService,
     FooterService,
+    AppDescriptorService,
     Title
   ],
   bootstrap: [AppComponent]

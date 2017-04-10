@@ -1,14 +1,25 @@
+@import "../../assets/styles/variables";
 .header-wrapper {
   position: fixed;
   top: 0;
   left: 0;
+  color: $white;
+  z-index: 999;
 }
 
 .logo {
   height: 40px;
   margin-left: 40px;
+  margin-right: 20px;
 }
 
 .company-name {
-  margin-left: 20px;
+  span {
+    display: block;
+  }
+  .subtitle {
+    font-size: 14px;
+    font-weight: 300;
+    font-style: italic;
+  }
 }
