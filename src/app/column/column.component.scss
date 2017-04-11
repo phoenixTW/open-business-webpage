@@ -1,0 +1,21 @@
+@import "../../assets/styles/variables";
+.column-container {
+  width: 250px;
+  margin: 30px;
+  display: inline-block;
+}
+
+.column-group-header {
+  text-align: center;
+}
+
+.column-wrapper {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  border-top: 1px solid $gray800;
+}
+
+.column-title {
+  font-weight: 900;
+}

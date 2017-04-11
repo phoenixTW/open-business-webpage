@@ -1,0 +1,14 @@
+<section class="no-margin column-wrapper">
+  <div class="page">
+    <h3 class="column-group-header">{{config.title}}</h3>
+    <md-card class="column-container" *ngFor="let column of config.columns">
+      <md-card-header>
+        <md-card-title class="mat-card-title column-title">{{column.title}}</md-card-title>
+      </md-card-header>
+      <img md-card-image src="{{column.image}}" *ngIf="column.image">
+      <md-card-content>
+        <p>{{column.paragraph}}</p>
+      </md-card-content>
+    </md-card>
+  </div>
+</section>

@@ -1,5 +1,7 @@
 {
   "companyName": "Open Business Web Page",
   "subtitle": "Think differently",
-  "companyLogo": "./../assets/img/logo.png"
+  "companyLogo": "./../assets/img/logo.png",
+  "maintenanceMode": false,
+  "maintenanceMessage": "This Site Is Under Development"
 }

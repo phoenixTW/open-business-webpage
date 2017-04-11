@@ -1,5 +1,6 @@
 <section *ngFor="let template of homeConfig.templates">
   <app-large-media *ngIf="isTemplate(template, 'large.media')" [component]="componentName"></app-large-media>
   <app-content *ngIf="isTemplate(template, 'content')" [component]="componentName"></app-content>
+  <app-column *ngIf="isTemplate(template, 'column')" [component]="componentName"></app-column>
 </section>
 

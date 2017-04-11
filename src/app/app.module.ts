@@ -15,6 +15,7 @@ import {FooterService} from './footer/footer.service';
 import { ContentComponent } from './content/content.component';
 import {AppDescriptorService} from './_services/app-descriptor.service';
 import { LargeMediaComponent } from './large-media/large-media.component';
+import { ColumnComponent } from './column/column.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { LargeMediaComponent } from './large-media/large-media.component';
     HomeComponent,
     FooterComponent,
     ContentComponent,
-    LargeMediaComponent
+    LargeMediaComponent,
+    ColumnComponent
   ],
   imports: [
     BrowserModule,
