@@ -4,11 +4,11 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { MaterialModule } from '@angular/material';
 import { MetaModule } from '@nglibs/meta';
+import { MdlModule } from '@angular-mdl/core';
 import 'hammerjs';
 
 import { AppComponent } from './app.component';
 import { routing } from './app.routing';
-import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import {HeaderService} from './header/header.service';
 import { FooterComponent } from './footer/footer.component';
@@ -21,7 +21,6 @@ import { ColumnComponent } from './column/column.component';
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
     HomeComponent,
     FooterComponent,
     ContentComponent,
@@ -33,6 +32,7 @@ import { ColumnComponent } from './column/column.component';
     FormsModule,
     HttpModule,
     routing,
+    MdlModule,
     MaterialModule.forRoot(),
     MetaModule.forRoot(),
   ],

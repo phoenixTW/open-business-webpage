@@ -1,5 +1,18 @@
-<app-header></app-header>
-<div style="margin-top: 64px;">
-  <router-outlet></router-outlet>
+<div class="demo-container" mdl-shadow="2">
+  <mdl-layout mdl-layout-fixed-header mdl-layout-header-seamed>
+    <mdl-layout-header>
+      <mdl-layout-header-row class="header-wrapper">
+        <img src="{{headerConfig.companyLogo}}" alt="{{headerConfig.companyName}}" class="logo" *ngIf="headerConfig.companyLogo">
+        <mdl-layout-title class="company-name">{{headerConfig.companyName}}</mdl-layout-title>
+        <mdl-layout-spacer></mdl-layout-spacer>
+        <span *ngIf="headerConfig.maintenanceMode" class="maintenance-message">
+          {{headerConfig.maintenanceMessage}}
+        </span>
+      </mdl-layout-header-row>
+    </mdl-layout-header>
+    <mdl-layout-content>
+      <router-outlet></router-outlet>
+      <app-footer></app-footer>
+    </mdl-layout-content>
+  </mdl-layout>
 </div>
-<app-footer></app-footer>

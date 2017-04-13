@@ -1,13 +1,15 @@
 <footer class="footer-wrapper theme">
   <div class="page">
-    <h2>CONTACT US</h2>
-    <div class="info">
-      <i class="material-icons">email</i>
-      <a href="mailto:{{footerConfig.email}}">{{footerConfig.email}}</a>
-    </div>
-    <ul class="info">
+    <h2 class="mdl-mega-footer--heading footer-heading">CONTACT US</h2>
+    <ul class="mdl-mega-footer--link-list">
+      <li>
+        <i class="material-icons footer-icon">email</i>
+        <a href="mailto:{{footerConfig.email}}">{{footerConfig.email}}</a>
+      </li>
+    </ul>
+    <ul class="mdl-mega-footer--link-list">
       <li *ngFor="let telephone of footerConfig.telephones">
-        <i class="material-icons">call</i>
+        <i class="material-icons footer-icon">call</i>
         <a href="tell:{{telephone}}">{{telephone}}</a>
       </li>
     </ul>

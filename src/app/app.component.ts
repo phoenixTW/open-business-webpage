@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
-import { MetaService } from '@nglibs/meta';
-import { AppDescriptorService } from './_services/app-descriptor.service';
+import {HeaderService} from './header/header.service';
+import {Title} from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',
@@ -8,14 +8,14 @@ import { AppDescriptorService } from './_services/app-descriptor.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  constructor(private readonly metaService: MetaService, private appDescriptor: AppDescriptorService) {}
+  headerConfig: any;
+  constructor(private headerService: HeaderService, private titleService: Title) {}
 
-  ngOnInit(): void {
-    this.appDescriptor.load('app').subscribe(appConfig => {
-      const meta = appConfig.meta;
-      Object.keys(meta).forEach(key => {
-        this.metaService.setTag(key, meta[key]);
+  ngOnInit() {
+    this.headerConfig = this.headerService.get()
+      .subscribe(headerConfig => {
+        this.headerConfig = headerConfig;
+        this.titleService.setTitle(this.headerConfig.companyName);
       });
-    });
   }
 }

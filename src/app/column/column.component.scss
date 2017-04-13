@@ -1,8 +1,37 @@
 @import "../../assets/styles/variables";
 .column-container {
-  width: 250px;
+  width: 310px;
   margin: 30px;
   display: inline-block;
+  background: $gray900;
+  h4 {
+    color: white;
+  }
+}
+
+@media only screen and (max-width: $width-1280) {
+  .column-container {
+    width: 450px;
+  }
+}
+
+@media only screen and (max-width: $width-1024) {
+  .column-container {
+    width: 340px;
+  }
+}
+
+@media only screen and (max-width: $width-900) {
+  .column-container {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: $width-640) {
+  .column-group-header {
+    font-size: 20px;
+    font-weight: 700;
+  }
 }
 
 .column-group-header {

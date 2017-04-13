@@ -1,13 +1,12 @@
 @import "../../assets/styles/variables";
 
 .title-section {
-  background: $gray500;
+  background: $gray900;
   padding: 50px 0;
   span {
     font-size: 2.5em;
     font-weight: 900;
     color: $white;
-    background: $gray500;
   }
 }
 
