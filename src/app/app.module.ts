@@ -2,7 +2,6 @@ import { BrowserModule, Title } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { MaterialModule } from '@angular/material';
 import { MetaModule } from '@nglibs/meta';
 import { MdlModule } from '@angular-mdl/core';
 import 'hammerjs';
@@ -33,7 +32,6 @@ import { ColumnComponent } from './column/column.component';
     HttpModule,
     routing,
     MdlModule,
-    MaterialModule.forRoot(),
     MetaModule.forRoot(),
   ],
   providers: [
