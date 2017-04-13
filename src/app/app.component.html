@@ -3,7 +3,11 @@
     <mdl-layout-header>
       <mdl-layout-header-row class="header-wrapper">
         <img src="{{headerConfig.companyLogo}}" alt="{{headerConfig.companyName}}" class="logo" *ngIf="headerConfig.companyLogo">
-        <mdl-layout-title class="company-name">{{headerConfig.companyName}}</mdl-layout-title>
+        <mdl-layout-title class="company-name">
+          {{headerConfig.companyName}}
+          <br>
+          <span class="subtitle" *ngIf="headerConfig.subtitle">{{headerConfig.subtitle}}</span>
+        </mdl-layout-title>
         <mdl-layout-spacer></mdl-layout-spacer>
         <span *ngIf="headerConfig.maintenanceMode" class="maintenance-message">
           {{headerConfig.maintenanceMessage}}
