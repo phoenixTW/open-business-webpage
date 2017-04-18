@@ -41,6 +41,50 @@
           }
         ]
       }
+    },
+    {
+      "name": "column",
+      "config": {
+        "title": "Our Teams",
+        "isRotationEnabled": true,
+        "columns": [
+          {
+            "front": {
+              "avatar": "http://s3.amazonaws.com/37assets/svn/765-default-avatar.png",
+              "name": "Person's Name",
+              "occupation": "Position"
+            },
+            "back": {
+              "heading": "About Me",
+              "aboutMe": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ultrices accumsan libero, id lobortis mi tempor vitae. Pellentesque in dui.",
+              "socials": [
+                {
+                  "name": "facebook",
+                  "link": "#"
+                }
+              ]
+            }
+          },
+          {
+            "front": {
+              "avatar": "http://s3.amazonaws.com/37assets/svn/765-default-avatar.png",
+              "name": "Person's Name",
+              "occupation": "Position"
+            },
+            "back": {
+              "heading": "About Me",
+              "aboutMe": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ultrices accumsan libero, id lobortis mi tempor vitae. Pellentesque in dui.",
+              "socials": [
+                {
+                  "name": "linkedin",
+                  "link": "#"
+                }
+              ]
+            }
+          }
+        ]
+      }
     }
+
   ]
 }

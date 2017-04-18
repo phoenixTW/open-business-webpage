@@ -1,0 +1,78 @@
+@import "../../assets/styles/variables";
+.flip-wrapper {
+  perspective: 800px;
+  margin: 30px;
+  width: 310px;
+  display: inline-block;
+}
+
+@media only screen and (max-width: $width-900) {
+  .flip-wrapper {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width: $width-768) {
+  .flip-wrapper {
+    width: 100%;
+  }
+  .flip-box__back {
+    margin-left: -17px;
+  }
+}
+
+.flip-box {
+  position: relative;
+  width: 100%;
+  min-height: 250px;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+.rotation-icon {
+  right: 15px;
+  position: absolute;
+}
+
+.flip-box__side {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  color: #fff;
+  text-align: center;
+  line-height: 100px;
+  font-size: 24px;
+  font-weight: 700;
+  cursor: pointer;
+  user-select: none;
+  padding: 10px;
+}
+.flip-box__back {
+  transform: rotateY(179.9deg);
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 5px solid white;
+}
+.social-btn-list {
+  list-style-type: none;
+  overflow: hidden;
+
+  li {
+    padding: 16px;
+    a {
+      text-decoration: none;
+      color: $white;
+      i {
+        font-size: 25px;
+      }
+    }
+  }
+}
+

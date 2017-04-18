@@ -1,4 +1,5 @@
 import { BrowserModule, Title } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
@@ -16,6 +17,7 @@ import { ContentComponent } from './content/content.component';
 import {AppDescriptorService} from './_services/app-descriptor.service';
 import { LargeMediaComponent } from './large-media/large-media.component';
 import { ColumnComponent } from './column/column.component';
+import { FlipCardComponent } from './flip-card/flip-card.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,8 @@ import { ColumnComponent } from './column/column.component';
     FooterComponent,
     ContentComponent,
     LargeMediaComponent,
-    ColumnComponent
+    ColumnComponent,
+    FlipCardComponent
   ],
   imports: [
     BrowserModule,
@@ -33,6 +36,7 @@ import { ColumnComponent } from './column/column.component';
     routing,
     MdlModule,
     MetaModule.forRoot(),
+    BrowserAnimationsModule
   ],
   providers: [
     HeaderService,

@@ -9,20 +9,12 @@ import {AppDescriptorService} from "../_services/app-descriptor.service";
 export class ColumnComponent implements OnInit {
   @Input()
   component: string;
+  @Input()
+  templateConfig: any;
   config: any;
-  constructor(private appDescriptor: AppDescriptorService) { }
+  constructor() { }
 
   ngOnInit() {
-    this.config = this.appDescriptor.load(this.component).subscribe(componentConfig => {
-      this.config = this.getLargeMediaConfig(componentConfig.templates);
-    });
-  }
-
-  private getLargeMediaConfig(templates: Array<any>) {
-    for (let count = 0; count < templates.length; count++) {
-      if (templates[count].name === 'column') {
-        return templates[count].config;
-      }
-    }
+    this.config = this.templateConfig.config;
   }
 }

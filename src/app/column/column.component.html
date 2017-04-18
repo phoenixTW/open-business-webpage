@@ -1,11 +1,16 @@
 <section class="no-margin column-wrapper">
   <div class="page">
     <h3 class="column-group-header">{{config.title}}</h3>
-    <mdl-card class="column-container" mdl-shadow="4"
-              *ngFor="let column of config.columns">
-      <mdl-card-title mdl-card-expand>
-        <h4>{{column.title}}</h4>
-      </mdl-card-title>
-    </mdl-card>
+    <div *ngIf="!config.isRotationEnabled">
+      <mdl-card class="column-container" mdl-shadow="4"
+                *ngFor="let column of config.columns">
+        <mdl-card-title mdl-card-expand>
+          <h4>{{column.title}}</h4>
+        </mdl-card-title>
+      </mdl-card>
+    </div>
+    <div *ngIf="config.isRotationEnabled">
+      <app-flip-card *ngFor="let column of config.columns" [data]="column"></app-flip-card>
+    </div>
   </div>
 </section>
